@@ -42,6 +42,6 @@ Workshop sobre jQuery na NBR por [Renan Couto](https://github.com/renancouto)
 3. async vs sync? async & sync!
 4. ajax e... o que você quiser
 
-### F. fun
+### G. fun
 1. efeitos
 2. utilidades
