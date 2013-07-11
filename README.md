@@ -31,11 +31,17 @@ Workshop sobre jQuery na NBR por [Renan Couto](https://github.com/renancouto)
 4. after e before
 5. clone
 
-### E. AJAX
+### E. ajax
 1. $.ajax vs $.get vs $.post
 2. parâmetros
 3. callbacks
 
-### F. FUN
+### F. callbacks
+1. "um método para todos governar"
+2. promisses & deferred
+3. async vs sync? async & sync!
+4. ajax e... o que você quiser
+
+### F. fun
 1. efeitos
 2. utilidades
