@@ -45,3 +45,30 @@ Workshop sobre jQuery na NBR por [Renan Couto](https://github.com/renancouto)
 ### G. fun
 1. efeitos
 2. utilidades
+
+## material
+
+Eu escolhi o node.js como server usando o express como framework para rodar os arquivos usados nesse workshop. Não é objetivo dessa atividade dar explicações sobre esses recursos, por isso apenas listarei os passos necessários para iniciar.
+
+* instale o git (recomendo usar a versão linha de comando mesmo, [daqui](http://git-scm.com/), mas fique a vontade na escolha de seu client, apenas saiba como clonar um repositório)
+* instale o [node.js](http://nodejs.org/)
+
+* clone esse [repositório](https://github.com/renancouto/workshop-jquery.git)
+
+```
+git clone https://github.com/renancouto/workshop-jquery.git
+```
+
+* instale as dependencias
+
+```
+npm install
+```
+
+* rode a aplicação
+
+```
+npm start
+```
+
+* clique [aqui!](http://localhost:3010) (http://localhost:3010)
