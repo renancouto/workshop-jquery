@@ -1,0 +1,37 @@
+{
+  "name": "workshop-jquery",
+  "version": "0.1.0",
+  "author": "Renan Couto <renancouto@gmail.com>",
+  "description": "Workshop sobre jQuery na NBR",
+  "contributors": [
+    {
+      "name": "Renan Couto",
+      "email": "renancouto@gmail.com"
+    }
+  ],
+  "scripts": {
+    "start": "node app.js"
+  },
+  "main": "./server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renancouto/workshop-jquery"
+  },
+  "keywords": [
+    "workshop",
+    "jquery",
+    "tutorial",
+    "javascript",
+    "front-end"
+  ],
+  "dependencies": {
+    "express": "3.2.x",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
