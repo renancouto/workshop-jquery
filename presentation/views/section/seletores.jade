@@ -1,8 +1,44 @@
-h2.sub-heading
+h3.sub-heading
   = '1. CSS3!'
 
 p.description
   = 'Implementa a especificação do CSS 1 ao 3 e adiciona mais alguns recursos. O jQuery usa a biblioteca Sizzle (http://sizzlejs.com/) como engine para seleção de elementos.'
 
-pre.code
-  = "$('body'); $('#fixed-header'); $('p')"
+pre.code.
+  $('body');
+  $('#fixed-header');
+  $('p');
+
+h3.sub-heading
+  = '2. Família'
+
+p.description
+  = 'Children? Parents? Siblings? É fácil lidar com elementos no jQuery é só pensar numa família. Você encontra um elemento e navega a partir dele usando essa metáfora.'
+
+pre.code.
+  .children([seletor]); // retorna os filhos deste elemento, opcionalmente filtrado por um seletor
+  .find([seletor]); // todos os descendentes
+  .siblings([seletor]); // todos os irmãos
+  .parent([seletor]); // pai
+  .parents([seletor]); // todos os antecessores
+  .closest(seletor); // primeiro antecessor compatível
+  .first(); // primeiro de um grupo
+  .last(); // último de um grupo
+  .filter(seletor); // reduz o grupo aos compatíveis
+  .end(); // termina a ultima operação do encadeamento e retorna ao estado anterior
+  .each(); // itera sobre todos os itens do grupo
+
+h3.sub-heading
+  = '3. Caching'
+
+p.description
+  = 'Se você vai manipular mais de uma vez aquele elemento é interessante que faça um cache dele, dessa forma'
+
+pre.code.
+  var $el = $('p')
+
+h4.sub-heading-2
+  = 'Performance'
+
+p.description
+  = ''

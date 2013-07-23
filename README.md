@@ -15,7 +15,6 @@ Workshop sobre jQuery na NBR por [Renan Couto](https://github.com/renancouto)
 1. CSS3!
 2. família
 3. caching
-4. performance
 
 ### C. eventos
 1. básicos
