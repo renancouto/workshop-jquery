@@ -1,44 +1,47 @@
-h3.sub-heading
-  = '1. CSS3!'
+li.item
+  h3.sub-heading
+    = 'CSS3!'
 
-p.description
-  = 'Implementa a especificação do CSS 1 ao 3 e adiciona mais alguns recursos. O jQuery usa a biblioteca Sizzle (http://sizzlejs.com/) como engine para seleção de elementos.'
+  p.description
+    = 'Implementa a especificação do CSS 1 ao 3 e adiciona mais alguns recursos. O jQuery usa a biblioteca Sizzle (http://sizzlejs.com/) como engine para seleção de elementos.'
 
-pre.code.
-  $('body');
-  $('#fixed-header');
-  $('p');
+  pre.code.
+    $('body');
+    $('#fixed-header');
+    $('p');
 
-h3.sub-heading
-  = '2. Família'
+li.item
+  h3.sub-heading
+    = 'Família'
 
-p.description
-  = 'Children? Parents? Siblings? É fácil lidar com elementos no jQuery é só pensar numa família. Você encontra um elemento e navega a partir dele usando essa metáfora.'
+  p.description
+    = 'Children? Parents? Siblings? É fácil lidar com elementos no jQuery é só pensar numa família. Você encontra um elemento e navega a partir dele usando essa metáfora.'
 
-pre.code.
-  .children([seletor]); // retorna os filhos deste elemento, opcionalmente filtrado por um seletor
-  .find([seletor]); // todos os descendentes
-  .siblings([seletor]); // todos os irmãos
-  .parent([seletor]); // pai
-  .parents([seletor]); // todos os antecessores
-  .closest(seletor); // primeiro antecessor compatível
-  .first(); // primeiro de um grupo
-  .last(); // último de um grupo
-  .filter(seletor); // reduz o grupo aos compatíveis
-  .end(); // termina a ultima operação do encadeamento e retorna ao estado anterior
-  .each(); // itera sobre todos os itens do grupo
+  pre.code.
+    .children([seletor]); <span class="comment">// retorna os filhos deste elemento, opcionalmente filtrado por um seletor</span>
+    .find([seletor]); <span class="comment">// todos os descendentes</span>
+    .siblings([seletor]); <span class="comment">// todos os irmãos</span>
+    .parent([seletor]); <span class="comment">// pai</span>
+    .parents([seletor]); <span class="comment">// todos os antecessores</span>
+    .closest(seletor); <span class="comment">// primeiro antecessor compatível</span>
+    .first(); <span class="comment">// primeiro de um grupo</span>
+    .last(); <span class="comment">// último de um grupo</span>
+    .filter(seletor); <span class="comment">// reduz o grupo aos compatíveis</span>
+    .end(); <span class="comment">// termina a ultima operação do encadeamento e retorna ao estado anterior</span>
+    .each(); <span class="comment">// itera sobre todos os itens do grupo</span>
 
-h3.sub-heading
-  = '3. Caching'
+li.item
+  h3.sub-heading
+    = 'Caching'
 
-p.description
-  = 'Se você vai manipular mais de uma vez aquele elemento é interessante que faça um cache dele, dessa forma'
+  p.description
+    = 'Se você vai manipular mais de uma vez aquele elemento é interessante que faça um cache dele, dessa forma'
 
-pre.code.
-  var $el = $('p')
+  pre.code.
+    var $el = $('p');
 
-h4.sub-heading-2
-  = 'Performance'
+  h4.sub-heading-2
+    = 'Performance'
 
-p.description
-  = ''
+  p.description
+    = ''

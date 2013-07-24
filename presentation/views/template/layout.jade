@@ -4,7 +4,7 @@ html
     title= 'Workshop jQuery'
 
     //- styles
-    //- link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,100')
     link(rel='stylesheet', href='/css/style.css')
 
   body
@@ -12,13 +12,12 @@ html
       header.main-header
         h1.heading= 'Workshop jQuery'
 
-      nav.main-nav
-        ul.items
-          each item in nav
-            li.item
-              a.link(href='#' + (item.link || item.label))= item.label
+        nav.main-nav
+          ul.items
+            each item in nav
+              li.item
+                a.link(href='#' + (item.link || item.label))= item.label
 
-      .main-content
-        block content
+      block content
 
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")

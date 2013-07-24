@@ -2,9 +2,47 @@ extends ./template/layout
 
 block content
 
-  // jade can't render dynamic includes =(
-  h2#sobre.heading= 'A. Sobre o jquery'
-  include ./section/sobre
+  ol.main-content
+    // jade can't render dynamic includes =(
 
-  h2#seletores.heading= 'B. Seletores'
-  include ./section/seletores
+    li.item
+      h2#sobre.heading= 'sobre'
+
+      ol.sub-content
+        include ./section/sobre
+
+    li.item
+      h2#seletores.heading= 'seletores'
+
+      ol.sub-content
+        include ./section/seletores
+
+    li.item
+      h2#eventos.heading= 'eventos'
+
+      ol.sub-content
+        include ./section/eventos
+
+    li.item
+      h2#manipulacao.heading= 'manipulacao'
+
+      ol.sub-content
+        include ./section/manipulacao
+
+    li.item
+      h2#ajax.heading= 'ajax'
+
+      ol.sub-content
+        include ./section/ajax
+
+    li.item
+      h2#callbacks.heading= 'callbacks'
+
+      ol.sub-content
+        include ./section/callbacks
+
+    li.item
+      h2#fun.heading= 'fun'
+
+      ol.sub-content
+        include ./section/fun

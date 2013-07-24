@@ -1,1 +1,60 @@
-= 'eventos'
+li.item
+  h3.sub-heading
+    = 'básicos'
+
+  p.description
+    = 'Eventos são uma forma de registrar comportamentos que são disparados quando o usuário interage com o navegador. Através dos eventos podemos detectar se um elemento foi clicado, se o documento carregou, se uma tecla foi apertada ou até mesmo se um campo perdeu seu foco.'
+
+  pre.code.
+    $('div').on('click', function(){}); <span class="comment">// on para vincular o evento à um objeto</span>
+    $('div').off('click'); <span class="comment">// off para desvincular</span>
+    $('div').on('click', 'span', function(){}); <span class="comment">// use um seletor como 2º argumento que vai ser executado ao encontrar o respectivo descendente</span>
+    $('div').trigger('click'); <span class="comment">// trigger para executar o evento</span>
+    $('div').one('click', function(){}); <span class="comment">// one executa apenas uma vez</span>
+
+li.item
+  h3.sub-heading
+    = 'customizados'
+
+  p.description
+    = 'Você pode criar seus próprios eventos e vinculá-los no elemento que desejar'
+
+  pre.code.
+    $(document).on('itemAdicionado', function(){});
+    $(document).trigger('itemAdicionado');
+
+li.item
+  h3.sub-heading
+    = 'namespaces'
+
+  p.description
+    = 'Controle de maneira eficiente a criação e remoção dos eventos usandos namespaces'
+
+  pre.code.
+    $('div').on('click', function(){ alert('1'); });
+    $('div').on('click', function(){ alert('2'); });
+    $('div').off('click'); <span class="comment">// remove todos os eventos associados ao click</span>
+
+    $('div').on('click', function(){ alert('1'); });
+    $('div').on('click.alternate', function(){ alert('2'); });
+    $('div').off('click.alternate'); <span class="comment">// remove apenas os eventos associados ao click.alternate</span>
+
+li.item
+  h3.sub-heading
+    = 'argumentos'
+
+  p.description
+    = 'Você pode transmitir dados junto com seu evento, dessa forma:'
+
+  pre.code.
+    $('div').on('click', { chave: 'valor' }, function(e){ console.log(e.data); });
+
+li.item
+  h3.sub-heading
+    = 'meu elemento não existe (#chatiado)'
+
+  p.description
+    = 'Use um seletor como 2º argumento que vai ser executado ao encontrar o respectivo descendente. Esse tipo de recurso substitui métodos obsoletos como o live e o delegate, porque permite que você associe eventos à elementos não existentes no DOM.'
+
+  pre.code.
+    $('div').on('click', 'span', function(){}); <span class="comment">// será executado ao clicar em um span que está dentro de uma div</span>
