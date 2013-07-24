@@ -11,6 +11,6 @@ var nav = [
 	{ "label": "eventos" },
 	{ "label": "manipulação", "link": "manipulacao" },
 	{ "label": "ajax" },
-	{ "label": "callbacks" },
+	// { "label": "callbacks" },
 	{ "label": "fun" }
 ];

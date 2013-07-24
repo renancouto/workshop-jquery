@@ -13,32 +13,51 @@ li.item
 
 li.item
   h3.sub-heading
-    = 'classes e atributos'
-
-  p.description
-
-  pre.code.
-
-li.item
-  h3.sub-heading
     = 'append e prepend'
 
   p.description
+    = 'Precisa inserir conteúdo ao elemento? Também é fácil!'
 
   pre.code.
+    $('div').append(content); <span class="comment">// insere conteúdo ao final do elemento</span>
+    $(content).appendTo('div'); <span class="comment">// insere conteúdo ao final do elemento</span>
+    $('div').prepend(content); <span class="comment">// insere conteúdo ao início do elemento</span>
+    $(content).prependTo('div'); <span class="comment">// insere conteúdo ao início do elemento</span>
 
 li.item
   h3.sub-heading
     = 'after e before'
 
   p.description
+    = 'Podemos também usar um elemento como referência na hora de adicionar conteúdo ao documento'
 
   pre.code.
+    $('div').after(content); <span class="comment">// insere conteúdo após o elemento</span>
+    $(content).insertAfter('div'); <span class="comment">// insere conteúdo após o elemento</span>
+    $('div').before(content); <span class="comment">// insere conteúdo antes do elemento</span>
+    $(content).insertBefore('div'); <span class="comment">// insere conteúdo antes do elemento</span>
+
+li.item
+  h3.sub-heading
+    = 'classes e atributos'
+
+  p.description
+    = 'Manipular as propriedades dos elementos é outra tarefa fácil que o jQuery nos proporciona'
+
+  pre.code.
+    $('div').css(propriedade ou propriedades); <span class="comment">// retorna o(s) valor(es) para aquela propriedade(s)</span>
+    $('div').css(propriedade, valor; ou objeto); <span class="comment">// define classe(s) para o elemento</span>
+    $('div').addClass(nome); <span class="comment">// aplica novas classes</span>
+    $('div').hasClass(nome); <span class="comment">// verifica se o elemento possue determinada classe</span>
+    $('div').attr(propriedade ou propriedades); <span class="comment">// retorna o(s) valor(es) para aqueles atributos(s)</span>
+    $('div').attr(propriedade, valor; ou objeto); <span class="comment">// define attributo(s) para o elemento</span>
 
 li.item
   h3.sub-heading
     = 'clone'
 
   p.description
+    = 'Use o clone para duplicar seu elemento'
 
   pre.code.
+    var $clone = $('div').clone();

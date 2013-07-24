@@ -25,23 +25,24 @@ Workshop sobre jQuery na NBR por [Renan Couto](https://github.com/renancouto)
 
 ### D. manipulação
 1. conteudo: html, text, val, empty
-2. classes e atributos
-3. append e prepend
-4. after e before
+2. append e prepend
+3. after e before
+4. classes e atributos
 5. clone
 
 ### E. ajax
 1. $.ajax vs $.get vs $.post
 2. parâmetros
-3. callbacks
 
+<!--
 ### F. callbacks
 1. "um método para todos governar"
 2. promisses & deferred
 3. async vs sync? async & sync!
 4. ajax e... o que você quiser
+-->
 
-### G. fun
+### F. fun
 1. efeitos
 2. utilidades
 

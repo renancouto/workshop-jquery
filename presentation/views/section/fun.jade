@@ -3,13 +3,36 @@ li.item
     = 'efeitos'
 
   p.description
+    = 'jQuery já vem com uma série de métodos usados para animar elementos de forma simples e direta'
 
   pre.code.
+    $().show(); <span class="comment">// mostra o elemento</span>
+    $().hide(); <span class="comment">// esconde o elemento</span>
+    $().toggle(); <span class="comment">// mostra ou esconde o elemento</span>
+
+    $().fadeIn(); <span class="comment">// faz o elemento aparecer através de sua opacidade</span>
+    $().fadeOut(); <span class="comment">// faz o elemento sumir através de sua opacidade</span>
+    $().fadeToggle(); <span class="comment">// faz o elemento aparecer ou sumir através de sua opacidade</span>
+
+    $().slideDown(); <span class="comment">// faz o elemento aparecer através de sua altura</span>
+    $().slideUp(); <span class="comment">// faz o elemento sumir através de sua altura</span>
+    $().slideToggle(); <span class="comment">// faz o elemento aparecer ou sumir através de sua altura</span>
+
+    $().animate(); <span class="comment">// anima o elemento através de suas propriedades css</span>
 
 li.item
   h3.sub-heading
     = 'utilidades'
 
   p.description
+    = 'Junto com os efeitos a biblioteca contém vários métodos que tornam o desenvolvimento mais ágil'
 
   pre.code.
+    $.data(); <span class="comment">// associa/retorna dados do elemento</span>
+    $.extend(); <span class="comment">// junta o conteúdo de dois ou mais objetos</span>
+    $.inArray(valor, array); <span class="comment">// verifica se o valor faz parte do array e retorna seu índice</span>
+    $.isArray(argumento); <span class="comment">// determina se o argumento é um array</span>
+    $.isEmptyObject(objeto); <span class="comment">// verifica se o objeto está vazio</span>
+    $.isPlainObject(argumento); <span class="comment">// verifica se o argumento é um objeto</span>
+    $.parseJSON(string); <span class="comment">// transforma uma string bem formada em objeto javascript</span>
+    $.trim(string); <span class="comment">// remove os caracteres em branco do inicio e final da string</span>

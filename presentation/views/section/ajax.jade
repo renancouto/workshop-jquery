@@ -3,21 +3,30 @@ li.item
     = '$.ajax vs $.get vs $.post'
 
   p.description
+    = 'jQuery possui alguns métodos que servem como atalhos para o $.ajax, entre eles os mais populares são o $.get e o $.post'
 
   pre.code.
+    $.get(); <span class="comment">// $.ajax({ url: url, data: data, success: success, dataType: dataType })</span>
+    $.post(); <span class="comment">// $.ajax({ type: "POST", url: url, data: data, success: success, dataType: dataType })</span>
+    $.getJSON(); <span class="comment">// $.ajax({ url: url, data: data, success: success, dataType: 'json' })</span>
+    $.getScript(); <span class="comment">// $.ajax({ url: url, dataType: 'script', success: success })</span>
 
 li.item
   h3.sub-heading
     = 'parâmetros'
 
   p.description
+    = 'Você pode passar um objeto que irá configurar a requisição Ajax, sendo que todas as suas configurações são opcionais'
 
   pre.code.
-
-li.item
-  h3.sub-heading
-    = 'callbacks'
-
-  p.description
-
-  pre.code.
+    async: true <span class="comment">// o uso com false pode temporariamente bloquear o navegador</span>
+    beforeSend: function() {} <span class="comment">// executa antes da requisição</span>
+    cache: true <span class="comment">// se mudar para false o jQuery irá adicionar um timestamp aos parâmentros, funciona apenas com requisições GET e HEAD</span>
+    complete: function() {} <span class="comment">// executa ao final da requisição, após error e success</span>
+    data: string; {} <span class="comment">// informações que serão transmitidas ao servidor</span>
+    dataType: 'Intelligent Guess' <span class="comment">// tipo de dado que você espera receber do servidor (xml, html, script, json, jsonp, text)</span>
+    error: function() {} <span class="comment">// executa se a requisição falhar</span>
+    success: function() {} <span class="comment">// executa se a requisição for bem sucedida</span>
+    timeout: number <span class="comment">// tempo de expiração da requisição</span>
+    type: 'GET' <span class="comment">// tipo da requisição (POST ou GET), ou outros métodos como PUT e DELETE podem ser usados, mas não são suportados por todos os navegadores</span>
+    url: string <span class="comment">// url da requisição</span>

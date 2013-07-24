@@ -16,7 +16,10 @@ html
           ul.items
             each item in nav
               li.item
-                a.link(href='#' + (item.link || item.label))= item.label
+                a.link(href='#' + (item.link || item.label), title=item.label)= item.label
+
+        - var label = 'exemplos'
+        a.link.more(href='http://codepen.io/renancouto/pen/Gwsnv', target='_blank', title=label)= label
 
       block content
 

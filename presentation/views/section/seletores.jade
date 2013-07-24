@@ -41,7 +41,25 @@ li.item
     var $el = $('p');
 
   h4.sub-heading-2
-    = 'Performance'
+    = 'Teste de Performance'
 
-  p.description
-    = ''
+  pre.code.code-performance.
+    var total = 3000;
+
+    <span class="comment">// sem cacher o elemento</span>
+    console.time('timer 1');
+    for(var i = 0; i < total; i++){ $('.code-performance').append(i); }
+    console.timeEnd('timer 1');
+
+    <span class="comment">// cacheando o elemento</span>
+    console.time('timer 2');
+    var $el = $('.code-performance');
+    for(var i = 0; i < total; i++){ $el.append(i); }
+    console.timeEnd('timer 2');
+
+    <span class="comment">// fazendo o append no final</span>
+    console.time('timer 3');
+    var html = '';
+    for(var i = 0; i < total; i++){ html += i; }
+    $('.code-performance').append(html);
+    console.timeEnd('timer 3');
